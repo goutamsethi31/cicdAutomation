@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Personal loan(failed)">
+    <parameter name="APikey/username" value="12345"/>
+    <parameter name="URL" value="personalloan.com"/>
+    <classes>
+      <class name="Test.Day2">
+        <methods>
+          <include name="ListenersTest"/>
+          <include name="prerequites"/>
+          <include name="bfclass"/>
+          <include name="afclass"/>
+        </methods>
+      </class> <!-- Test.Day2 -->
+    </classes>
+  </test> <!-- Personal loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->
